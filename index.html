@@ -30,39 +30,60 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/header-logo.png" alt="logo-cv" />
+            <nav
+                 class="fixed w-full px-6 bg-blue_green_clear shadow-md flex flex-wrap items-center py-2">
+                <div class="flex-1 flex justify-between items-center">
+                    <a class="flex text-lg font-semibold" href="./index.html">
+                        <img src="./assets/header-logo.png" class="py-2"
+                             alt="logo-cv" />
                     </a>
                 </div>
-                <label for="menu-toggle">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="flex mx-12"><a
+                       href="https://www.linkedin.com/in/julien-salome/"
+                       target="_blank"><i
+                           class="fa-brands fa-linkedin text-4xl text-white hover:text-gray hover:animate-bounce mx-3"></i></a>
+                    <a href="https://github.com/MajorJulien" target="_blank"><i
+                           class="fa-brands fa-github text-4xl text-white hover:text-gray hover:animate-bounce mx-3"
+                           aria-hidden="true"></i></a>
+                    <a href="./docs/Julien_Salome.pdf" target="_blank"
+                       class="text-xl text-white font-semibold relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+                        <i class="icon fa-solid fa-download text-3xl text-white hover:text-gray mx-1"
+                           aria-hidden="true"></i> CV</a>
+                </div>
+                <label for="menu-toggle" class="cursor-pointer xl:hidden block">
+                    <i class="fa-solid fa-bars text-3xl text-gray"></i>
                 </label>
-                <input type="checkbox" id="menu-toggle" />
-                <div id="menu">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#top">À propos</a>
-                            </li>
-                            <li>
-                                <a href="#Diplômes">Diplômes</a>
-                            </li>
-                            <li>
-                                <a href="#Expériences">Expériences</a>
-                            </li>
-                            <li>
-                                <a href="#Compétences">Compétences</a>
-                            </li>
-                            <li>
-                                <a href="#Projets">Projets</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+                <div class="hidden xl:flex xl:items-center xl:w-auto w-full"
+                     id="menu">
+                    <ul
+                        class="text-center text-xl text-white font-semibold items-center gap-x-5 pt-4 xl:gap-x-8 xl:text-lg xl:flex xl:pt-0">
+                        <li class="py-2 xl:py-0">
+                            <a href="#top"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right">À
+                                propos</a>
+                        </li>
+                        <li class="py-2 xl:py-0">
+                            <a href="#Diplômes"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Diplômes</a>
+                        </li>
+                        <li class="py-2 xl:py-0">
+                            <a href="#Expériences"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Expériences</a>
+                        </li>
+                        <li class="py-2 xl:py-0">
+                            <a href="#Compétences"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Compétences</a>
+                        </li>
+                        <li class="py-2 xl:py-0">
+                            <a href="#Projets"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Projets</a>
+                        </li>
+                        <li class="py-2 xl:py-0">
+                            <a href="#Contact"
+                               class="hover:text-gray relative w-fit block after:block after:absolute after:h-[3px] after:bg-blue_pale after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>

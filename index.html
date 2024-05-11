@@ -285,6 +285,33 @@
                    class="fa-solid fa-envelope fa-2xl text-blue_pale text-center mb-5 xl:mb-0"></i>
                 <h2 class="text-gray text-3xl font-semibold mt-5">Contact</h2>
             </section>
+            <section class="flex justify-center mb-20">
+                <form class="flex flex-col space-y-3">
+                    <label for="nom"><i
+                           class="fa fa-user text-blue_pale mr-2"></i>Nom &
+                        Prénom:</label>
+                    <input type="text" id="nom" name="nom"
+                           placeholder="Votre nom & prénom"
+                           class="border-b-2 border-b-[#94C5CC]" required>
+                    <label for="email"><i
+                           class="fa fa-envelope text-blue_pale mr-2"></i>Adresse
+                        e-mail :</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Votre e-mail"
+                           class="border-b-2 border-b-[#94C5CC]" required>
+                    <label for="message"><i
+                           class="fa fa-comment text-blue_pale mr-2"></i>Message
+                        :</label>
+                    <textarea id="message" name="message"
+                              placeholder="Votre message"
+                              class="border-b-2 border-b-[#94C5CC] resize-y lg:resize"
+                              required></textarea>
+                    <button type="submit"
+                            class="items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray rounded-lg hover:bg-blue_green_clear"><i
+                           class="fa fa-paper-plane text-blue_pale mr-2"></i>Envoyer</button>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer></footer>
     </body>

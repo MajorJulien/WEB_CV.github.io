@@ -275,7 +275,8 @@
                             durant la formation intégrateur web. </p>
                         <a href="https://simplon-hdf.github.io/BabyPics-JRF.github.io/"
                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray rounded-lg hover:bg-blue_pale">
-                            Voir plus<i class="fa-solid fa-eye ml-2"></i>
+                            Voir plus<i
+                               class="fa-solid fa-eye blue_green_clear ml-2"></i>
                         </a>
                     </div>
                 </div>
@@ -286,11 +287,13 @@
                 <h2 class="text-gray text-3xl font-semibold mt-5">Contact</h2>
             </section>
             <section class="flex justify-center mb-20">
-                <form class="flex flex-col space-y-3" action="recup_donnees.php"
-                      method="POST">
+                <form class="flex flex-col space-y-3"
+                      action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key"
+                           value="786c6b7d-5761-48e8-8650-23e169cb35ee">
                     <label for="nom"><i
                            class="fa fa-user text-blue_pale mr-2"></i>Nom &
-                        Prénom :</label>
+                        Prénom:</label>
                     <input type="text" id="nom" name="nom"
                            placeholder="Votre nom & prénom"
                            class="border-b-2 border-b-[#94C5CC]" required>
@@ -307,6 +310,8 @@
                               placeholder="Votre message"
                               class="border-b-2 border-b-[#94C5CC] resize-y lg:resize"
                               required></textarea>
+                    <!-- hCaptcha Spam Protection -->
+                    <div class="h-captcha" data-captcha="true"></div>
                     <button type="submit"
                             class="items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray rounded-lg hover:bg-blue_green_clear"><i
                            class="fa fa-paper-plane text-blue_pale mr-2"></i>Envoyer</button>

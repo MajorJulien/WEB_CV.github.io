@@ -11,6 +11,7 @@
         <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
                 crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="tailwind.config.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
               rel="stylesheet">
         <script>
@@ -97,7 +98,7 @@
                 <div
                      class="h-72 lg:h-96 flex flex-col justify-center font-roboto space-y-4 lg:border-t-4 lg:border-l-4 border-[#94C5CC] border-b-4 lg:border-b-0 lg:mt-0 lg:ml-10 xl:ml-28 2xl:ml-60">
                     <h2
-                        class="text-xl lg:text-3xl font-semibold text-center lg:text-end">
+                        class="text-xl lg:text-3xl font-semibold text-center lg:text-end fade-right">
                         Bienvenue ! </h2>
                     <h1
                         class="text-4xl text-blue_pale lg:text-6xl font-semibold text-center lg:text-end">
@@ -108,13 +109,14 @@
                        class="mx-5 lg:mx-0 lg:ml-5 text-lg lg:text-xl font-medium text-center lg:text-end">
                         Un développeur FRONT-END avec une passion pour le design
                         et la création de contenu. </p>
-                    <div
-                         class="flex flex-row justify-center lg:justify-end pb-8">
+                    <div class="flex flex-row justify-center lg:justify-end">
                         <a class="w-38 items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray rounded-lg hover:bg-blue_green_clear"
                            href="#Contact"><i
                                class="fa fa-envelope text-blue_pale mr-2"></i>Me
                             contacter</a>
                     </div>
+                    <i class="hidden lg:block fa-solid fa-chevron-down text-2xl xl:text-4xl text-gray animate-bounce text-center lg:text-end pt-6"
+                       aria-hidden="true"></i></a>
                 </div>
                 <figure
                         class="w-full mt-10 lg:mt-0 mb-10 xl:mr-28 flex justify-center">
@@ -122,6 +124,8 @@
                          alt="photo de julien salomé"
                          class="h-40 sm:h-72 lg:h-96 shadow-xl xl:ml-44">
                 </figure>
+                <i class="lg:hidden fa-solid fa-chevron-down text-2xl xl:text-4xl text-gray animate-bounce text-center pt-6"
+                   aria-hidden="true"></i></a>
             </section>
             <!-- Contenu de la section "À propos" -->
             <section class="grid grid-cols-1 lg:grid-cols-2 mb-20"
@@ -131,7 +135,8 @@
                 </div>
                 <div
                      class="w-full sm:w-80 font-roboto space-y-4 lg:ml-10 text-center place-self-center lg:place-self-start lg:text-start text-pretty">
-                    <h2 class="text-gray text-3xl font-semibold"> À propos </h2>
+                    <h2 class="text-gray text-3xl font-semibold fade-right"> À
+                        propos </h2>
                     <p>Dans le cadre de ma reconversion professionnelle, j’ai
                         rejoins Simplon afin d’apprendre les compétences
                         nécessaires dans l’objectif de travailler dans le
